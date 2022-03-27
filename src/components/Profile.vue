@@ -55,30 +55,10 @@
             <a href="" class="btn">learn more</a>
           </div>
         </div>
-        <div class="box">
-          <img src="@/assets/images/img-1.jpeg" alt="" />
-          <div class="content">
-            <a href="" class="btn">learn more</a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="@/assets/images/img-1.jpeg" alt="" />
-          <div class="content">
-            <a href="" class="btn">learn more</a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="@/assets/images/img-1.jpeg" alt="" />
-          <div class="content">
-            <a href="" class="btn">learn more</a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="@/assets/images/img-1.jpeg" alt="" />
-          <div class="content">
-            <a href="" class="btn">learn more</a>
-          </div>
-        </div>
+       
+    
+    
+    
       </div>
     </section>
     <section class="contact" id="contact">
