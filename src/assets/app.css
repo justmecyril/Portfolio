@@ -200,7 +200,7 @@ header .navbar a:hover {
   font-size: 4rem;
 }
 .about .row .content h3 span {
-  color: var(--green);
+  color: var(--olive);
 }
 
 .about .row .content .info {
