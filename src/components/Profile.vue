@@ -8,7 +8,6 @@
           <h2 data-text="i am a frontend developer">
             i am a frontend developer
           </h2>
-          <a href="#about" class="btn">about me</a>
         </div>
       </div>
     </div>
@@ -55,10 +54,6 @@
             <a href="" class="btn">learn more</a>
           </div>
         </div>
-       
-    
-    
-    
       </div>
     </section>
     <section class="contact" id="contact">
