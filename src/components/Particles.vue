@@ -1,7 +1,6 @@
 <template>
   <div>
     <vue-particles
-      class="container"
       color="#dedede"
       :particleOpacity="1"
       :particlesNumber="100"
@@ -22,12 +21,8 @@
 
 <script>
 export default {
-  name: "Particles"
+  name: "Particles",
 };
 </script>
 
-<style scoped>
-.container {
-  height: 100vh;
-}
-</style>
+<style scoped></style>

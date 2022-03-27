@@ -1,38 +1,32 @@
 <template>
-  <div id="app">
-    <!-- <img width="25%" src="./assets/logo.png"> -->
-    <Particles/>
-    <Timer class="timer-position"/>
-  
+  <div>
+    <Navbar />
+    <Particles />
+    <Profile />
+    <router-view />
   </div>
 </template>
 
 <script>
 import Particles from "./components/Particles";
-import Timer from "./components/Timer";
+import Profile from "./components/Profile";
+import Navbar from "@/components/Navbar";
 
 export default {
   name: "App",
   components: {
+    Navbar,
     Particles,
-    Timer
-  }
+    Profile,
+  },
 };
 </script>
 
 <style>
-#app {
-  font-family: "Rajdhani", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  /* padding-top: 50px; */
+:root {
+  --olive: #808000;
 }
 
-.timer-position {
-  top: 0;
-}
 vue-particles {
   min-height: 10vh;
 }
