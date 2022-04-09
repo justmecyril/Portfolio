@@ -1,5 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&display=swap");
 
 * {
   font-family: "Nunito", sans-serif;
@@ -9,7 +9,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
+
   transition: all 0.2s linear;
 }
 html {
@@ -27,7 +27,7 @@ html::-webkit-scrollbar-thumb {
   background: var(--olive);
 }
 body {
-  background-color: #232741;
+  background-color: #000000;
   min-height: 100vh;
   margin: 0;
   padding-right: 5rem;
@@ -35,7 +35,7 @@ body {
 section {
   padding: 2rem 9%;
   min-height: 100vh;
-  background: #ffffff;
+  background: #000000;
 }
 .heading {
   text-align: center;
@@ -135,10 +135,9 @@ header .navbar a:hover {
 .intro {
   /*display:flex;*/
   position: absolute;
-
   flex-direction: column;
   top: 20%;
-  left: 35%;
+  left: 30%;
 }
 
 .home {
@@ -163,6 +162,7 @@ header .navbar a:hover {
 .home .content h3 {
   font-size: 4rem;
   color: #fff;
+  margin-top: 30px;
   text-transform: uppercase;
 }
 
@@ -173,9 +173,10 @@ header .navbar a:hover {
 
 .home .content h2 {
   font-size: 2.5rem;
-  color: #fff;
+  color: #ffffff;
   line-height: 2;
 }
+
 .about .row {
   display: flex;
   flex-wrap: wrap;
@@ -196,15 +197,18 @@ header .navbar a:hover {
   flex: 1 1 55rem;
 }
 .about .row .content h3 {
-  color: #222;
+  color: #ffffff;
   font-size: 4rem;
+}
+.about h1 {
+  color: #ffffff;
 }
 .about .row .content h3 span {
   color: var(--olive);
 }
 
 .about .row .content .info {
-  color: #333;
+  color: #ffffff;
   font-size: 1.7rem;
   padding: 1rem 0;
   line-height: 2;
@@ -230,83 +234,224 @@ header .navbar a:hover {
 .about .row .content .box-container .box p span img {
   height: 2rem;
 }
-.portfolio .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-.portfolio .box-container .box {
-  flex: 1 1 30rem;
-  border-radius: 0.5rem;
-  border: 1rem solid #fff;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-  height: 25rem;
+.portfolio h1 {
+  color: #ffffff;
 }
 
-.portfolio .box-container .box img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+:root {
+  --card-height: 40vw;
+  --card-margin: 4vw;
+  --card-top-offset: 1em;
+  --numcards: 4;
+  --outline-width: 0px;
 }
 
-.portfolio .box-container .box .content {
-  height: 100%;
-  width: 100%;
-  position: absolute;
+#cards {
+  padding-bottom: calc(var(--numcards) * var(--card-top-offset));
+  margin-bottom: var(--card-margin);
+}
+
+#card_1 {
+  --index: 1;
+}
+
+#card_2 {
+  --index: 2;
+}
+
+#card_3 {
+  --index: 3;
+}
+
+#card_4 {
+  --index: 4;
+}
+#card_2 .card__content figure img {
+  transform: rotate(10deg);
+}
+#card_3 .card__content figure img {
+  transform: rotate(-10deg);
+}
+#card_4 .card__content figure img {
+  transform: rotate(20deg);
+}
+
+.card {
+  position: sticky;
   top: 0;
-  left: -100%;
-  background: #fff9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.portfolio .box-container .box:hover .content {
-  left: 0;
-}
-.contact .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: center;
+  padding-top: calc(var(--index) * var(--card-top-offset));
 }
 
-.contact .row .image {
+@supports (animation-timeline: works) {
+  @scroll-timeline cards-element-scrolls-in-body {
+    source: selector(body);
+    scroll-offsets: selector(#cards) start 1, selector(#cards) start 0;
+    start: selector(#cards) start 1;
+    end: selector(#cards) start 0;
+    time-range: 4s;
+  }
+
+  .card {
+    --index0: calc(var(--index) - 1);
+    --reverse-index: calc(var(--numcards) - var(--index0));
+    --reverse-index0: calc(var(--reverse-index) - 1);
+  }
+
+  .card__content {
+    transform-origin: 50% 0%;
+    will-change: transform;
+
+    --duration: calc(var(--reverse-index0) * 1s);
+    --delay: calc(var(--index0) * 1s);
+
+    animation: var(--duration) linear scale var(--delay) forwards;
+    animation-timeline: cards-element-scrolls-in-body;
+  }
+
+  @keyframes scale {
+    to {
+      transform: scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
+    }
+  }
+}
+
+/** DEBUG **/
+
+#debug {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+}
+#debug::after {
+  content: " Show Debug";
+  margin-left: 1.5em;
+  color: white;
+  white-space: nowrap;
+}
+
+#debug:checked ~ main {
+  --outline-width: 1px;
+}
+
+/** PAGE STYLING **/
+
+.stacked_cards * {
+  /* Poor Man's Reset */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.stacked_cards body {
+  background: rgb(58 29 43);
+  color: rgb(255, 255, 255);
   text-align: center;
-  flex: 1 1 25rem;
-}
-.contact .row .image img {
-  width: 55rem;
-}
-.contact .row .content {
-  flex: 1 1 55rem;
+
+  font-size: calc(1em + 0.5vw);
 }
 
-.contact .row .content .info {
-  color: #333;
-  font-size: 1.7rem;
-  padding: 1rem 0;
-  line-height: 2;
-  text-transform: none;
+.stacked_cards header,
+main {
+  width: 80vw;
+  margin: 0 auto;
 }
-.contact .row .content .box-container {
+
+.stacked_cards header {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#cards {
+  list-style: none;
+  outline: calc(var(--outline-width) * 10) solid blue;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--numcards), var(--card-height));
+  gap: var(--card-margin);
+}
+
+.card {
+  outline: var(--outline-width) solid hotpink;
+}
+
+.card__content {
+  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+  background: #000000;
+  //color: rgb(10, 5, 7);
+  border-radius: 1em;
+  overflow: visible;
+
+  display: grid;
+  grid-template-areas: "text img";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+  align-items: stretch;
+  outline: var(--outline-width) solid lime;
+}
+
+.card__content > div {
+  grid-area: text;
+  width: 80%;
+  place-self: center;
+  text-align: left;
+
+  display: grid;
+  gap: 1em;
+  place-items: start;
+}
+
+.card__content > figure {
+  grid-area: img;
+  overflow: hidden;
+}
+
+.card__content > figure > img {
+  width: 80%;
+  height: 80%;
+  margin-top: 24px;
+  object-fit: scale-down;
+}
+
+.stacked_cards h2 {
+  font-weight: 800;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.stacked_cards p {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.42;
+  color: white;
+  padding-bottom: 12px;
+  border-bottom: 1px solid white;
+}
+
+.stacked_cards h1 {
+  font-weight: 300;
+  font-size: 3.5em;
+}
+
+.contact h1 {
+  width: 50vw;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 72px;
+  text-align: center;
+}
+
+.contact a,
+p {
+  color: #ffffff;
+}
+.footer {
+  margin-top: 16em;
+  font-size: 16px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 1rem 0;
-}
-.contact .row .content .box-container .box {
-  flex: 1 1 20rem;
-}
-.contact .row .content .box-container .box p {
-  font-size: 1.7rem;
-  color: #222;
-  padding: 0 2rem;
-  line-height: 2;
-  text-transform: none;
-}
-
-.contact .row .content .box-container .box p span img {
-  height: 2rem;
+  justify-content: space-between;
 }

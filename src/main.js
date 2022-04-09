@@ -5,6 +5,7 @@ import "@/assets/app.css";
 import VueParticles from "vue-particles";
 
 import Notifications from "vue-notification";
+
 Vue.use(Notifications);
 
 Vue.use(VueParticles);

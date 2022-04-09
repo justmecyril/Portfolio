@@ -1,12 +1,12 @@
 <template>
   <div class="main">
     <div class="intro" id="intro">
-      <div class="home">
+      <div class="home" id="home">
         <div class="content">
           <img src="@/assets/images/avatar.png" alt="" />
-          <h3>cyril <span>semabia</span></h3>
-          <h2 data-text="i am a frontend developer">
-            i am a frontend developer
+          <h3>Cyril <span>Semabia</span></h3>
+          <h2>
+            I am a Front-End Web Developer
           </h2>
         </div>
       </div>
@@ -19,346 +19,346 @@
           <img src="@/assets/images/avatar.png" alt="" />
         </div>
         <div class="content">
-          <h3>my name is <span> cyril semabia </span></h3>
+          <h3>My name is <span> Cyril Semabia </span></h3>
           <p class="info">
-            Front-end developer with background in networking and system
-            administration. Targeting front-end specific roles.
+            I am a Front-End Web Developer operating from my base in Accra,
+            Ghana.
           </p>
-          <div class="box-container">
-            <div class="box">
-              <p>
-                <span> <img src="@/assets/images/linkedin.png" alt="" /> </span>
-                linkedin.com/in/cyril-semabia
-              </p>
-              <p>
-                <span> <img src="@/assets/images/GitHub.png" alt="" /> </span>
-                github.com/justmecyril
-              </p>
+          <p class="info">
+            I love to translate designs into clean, elegant, functional and
+            responsive User Interfaces. I have industry experience building
+            websites and web applications using HTML, CSS, SCSS, JavaScript,
+            Vue/Vuex, Tailwind CSS and Supabase.
+          </p>
+        </div>
+        <div class="carousal">
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="@/assets/images/html.svg"
+                  height="80"
+                  width="250"
+                  alt=""
+                />
+                <h3>HTML</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/css.svg"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>CSS</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/scss.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>SCSS</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/javascript.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>JavaScript</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/vuejs.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>VueJs</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/tailwind.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>Tailwind</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/supabase.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>Supabase</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/git.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>Git</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/html.svg"
+                  height="80"
+                  width="250"
+                  alt=""
+                />
+                <h3>HTML</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/css.svg"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>CSS</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/scss.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>SCSS</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/javascript.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>JavaScript</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/vuejs.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>VueJs</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/tailwind.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>Tailwind</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/supabase.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>Supabase</h3>
+              </div>
+              <div class="slide">
+                <img
+                  src="@/assets/images/git.png"
+                  height="80"
+                  width="100"
+                  alt=""
+                />
+                <h3>Git</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="portfolio" id="portfolio">
-      <h1 class="heading"><span> my </span> portfolio</h1>
-      <div class="box-container">
-        <div class="box">
-          <img src="@/assets/images/img-1.jpeg" alt="" />
-          <div class="content">
-            <a href="" class="btn">learn more</a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="@/assets/images/img-2.jpeg" alt="" />
-          <div class="content">
-            <a href="" class="btn">learn more</a>
-          </div>
-        </div>
+      <h1 class="heading"><span> recent </span> projects</h1>
+      <div class="stacked_cards">
+        <main>
+          <ul id="cards">
+            <li class="card" id="card_1">
+              <div class="card__content">
+                <div>
+                  <h2>Guard Tracker</h2>
+                  <p>
+                    A system for managing security personnel.
+                  </p>
+                  <p>Guard Tracker ● 2022</p>
+                  <p>VueJs, Tailwind CSS, Supabase</p>
+                  <p>https://guardtracker.netlify.app</p>
+                </div>
+                <figure>
+                  <img
+                    src="@/assets/images/Guard Tracker.png"
+                    alt="Image description"
+                  />
+                </figure>
+              </div>
+            </li>
+            <li class="card" id="card_2">
+              <div class="card__content">
+                <div>
+                  <h2>Last Mile</h2>
+                  <p>
+                    A system for managing ISP clientele.
+                  </p>
+                  <p>Last Mile ● 2021</p>
+                  <p>VueJs/VueXJs, Tailwind CSS, Supabase</p>
+                  <p>https://last-mile.netlify.app</p>
+                </div>
+                <figure>
+                  <img
+                    src="@/assets/images/Last Mile.png"
+                    alt="Image description"
+                  />
+                </figure>
+              </div>
+            </li>
+            <li class="card" id="card_3">
+              <div class="card__content">
+                <div>
+                  <h2>Leave Request</h2>
+                  <p>
+                    Coming Soon.
+                  </p>
+                  <p>Coming Soon.</p>
+                  <p>Coming Soon.</p>
+                  <p>Coming Soon.</p>
+                </div>
+                <figure>
+                  <img
+                    src="@/assets/images/under construction.jpeg"
+                    alt="Image description"
+                  />
+                </figure>
+              </div>
+            </li>
+            <li class="card" id="card_4">
+              <div class="card__content">
+                <div>
+                  <h2>Easy Consult</h2>
+                  <p>
+                    Coming Soon.
+                  </p>
+                  <p>Coming Soon.</p>
+                  <p>Coming Soon.</p>
+                  <p>Coming Soon.</p>
+                </div>
+                <figure>
+                  <img
+                    src="@/assets/images/construction.png"
+                    alt="Image description"
+                  />
+                </figure>
+              </div>
+            </li>
+          </ul>
+        </main>
       </div>
     </section>
     <section class="contact" id="contact">
-      <h1 class="heading"><span> contact </span> me</h1>
-      <div class="row">
-        <div class="image">
-          <img src="@/assets/images/contact-img.svg" alt="" />
+      <div>
+        <h1>Alone we can do so little; <br />together we can do so much.</h1>
+        <h1><a href="mailto:kofisem@gmail.com">Get in touch.</a></h1>
+      </div>
+      <div class="footer">
+        <div>
+          <a href="https://www.linkedin.com/in/cyril-semabia"
+            >www.linkedin.com/in/cyril-semabia</a
+          >
         </div>
-        <div class="content">
-          <div class="box-container">
-            <div class="box">
-              <p>
-                <span> <img src="@/assets/images/location.png" alt="" /> </span>
-                Accra, Ghana
-              </p>
-              <p>
-                <span> <img src="@/assets/images/phone.png" alt="" /> </span>
-                +233242221481
-              </p>
-              <p>
-                <span> <img src="@/assets/images/email.png" alt="" /> </span>
-                kofisem@gmail.com
-              </p>
-              <p>
-                <span> <img src="@/assets/images/skype.png" alt="" /> </span>
-                kofisem@gmail.com
-              </p>
-            </div>
-          </div>
+        <div>
+          <a href="https://github.com/justmecyril"
+            >https://github.com/justmecyril</a
+          >
         </div>
+        <div><p>Designed by me</p></div>
+        <div><p>© 2022. All rights reserved</p></div>
       </div>
     </section>
   </div>
 </template>
 
-<script>
-// Setting Variables
-let countdown; // storing setInterval in this function to be able to stop it at zero.
-const { responsiveVoice } = window;
+<style lang="scss">
+section {
+  margin: 0 86px;
+}
+.carousal body {
+  align-items: center;
+  background: #e3e3e3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
 
-export default {
-  name: "Timer",
-  data() {
-    return {
-      showTimer: `00:00`,
-      endTime: `00:00`,
-      seconds: 0,
-      minutes: 0,
-      enteredMins: "",
-      chosenValue: "break",
-      options: ["break", "mission", "deadline"],
-      coretabs:
-        "https://forums.coretabs.net/t/سلسلة-التحدي-الأسبوعي-التحدي-3/3578/12",
-      pomodroMode: false,
-      // stageOne: true,
-      stageTwo: false,
-      stageThree: false,
-      stageFour: false,
-      fiveBreak1: false,
-      fiveBreak2: false,
-      fiveBreak3: false,
-      longBreak: false,
-      // pomodroHistory: []
-    };
-  },
-  methods: {
-    handleOptions(event) {
-      this.chosenValue = event.target.value;
-    },
-    shortBreak() {
-      this.$on("shortBreak1", () => {
-        // console.log('five mins break')
-        this.$notify({
-          group: "pomodro",
-          type: "warn",
-          title: "break!",
-          text: "First short 5 minutes break started!",
-        });
-        this.$refs.five.click();
-        this.fiveBreak1 = false;
-      });
-      this.$on("shortBreak2", () => {
-        // console.log('five mins break')
-        this.$notify({
-          group: "pomodro",
-          type: "warn",
-          title: "break!",
-          text: "Second short 5 minutes break started!",
-        });
-        this.$refs.five.click();
-        this.fiveBreak2 = false;
-      });
-      this.$on("shortBreak3", () => {
-        // console.log('five mins break')
-        this.$notify({
-          group: "pomodro",
-          type: "warn",
-          title: "break!",
-          text: "Third short 5 minutes break started!",
-        });
-        this.$refs.five.click();
-        this.fiveBreak3 = false;
-      });
-    },
-    thirtyBreak() {
-      this.$on("longBreak", () => {
-        // console.log('long break time')
-        this.$notify({
-          group: "pomodro",
-          type: "warn",
-          title: "break!",
-          text: "Long 30 minutes break started!",
-        });
-        this.$refs.thirty.click();
-        this.longBreak = false;
-      });
-    },
-    runPomodro() {
-      this.pomodroMode = true; //running pomodro mode
+$animationSpeed: 15s;
 
-      // notification
-      this.$notify({
-        group: "pomodro",
-        type: "warn",
-        title: "pomodro started!",
-        text: "Pomodro mode started!",
-      });
+// Animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
 
-      // stage 1
-      // console.log('stage 1')
-      this.$notify({
-        group: "pomodro",
-        type: "success",
-        title: "stage 1",
-        text: "stage 1 started!",
-      });
-      this.$refs.work.click();
+// Styling
+.slider {
+  background: black;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
 
-      // five minutes break
-      this.fiveBreak1 = true;
-      this.shortBreak();
+  &::before,
+  &::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
 
-      // stage 2
-      this.stageTwo = true;
-      this.$on("stageTwo", () => {
-        this.$notify({
-          group: "pomodro",
-          type: "info",
-          title: "stage 2",
-          text: "stage 2 started started!",
-        });
-        // console.log('stage 2')
-        this.$refs.work.click();
-        this.stageTwo = false;
-      });
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
 
-      // five minutes break
-      this.fiveBreak2 = true;
-      this.shortBreak();
+  &::before {
+    left: 0;
+    top: 0;
+  }
 
-      // stage 3
-      this.stageThree = true;
-      this.$on("stageThree", () => {
-        this.$notify({
-          group: "pomodro",
-          type: "info",
-          title: "stage 3",
-          text: "stage 3 started started!",
-        });
-        // console.log('stage 3')
-        this.$refs.work.click();
-        this.stageThree = false;
-      });
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
 
-      // five minutes break
-      this.fiveBreak3 = true;
-      this.shortBreak();
+  .slide {
+    height: 100px;
+    width: 250px;
+    padding-top: 2vh;
+  }
 
-      // stage 4
-      this.stageFour = true;
-      this.$on("stageFour", () => {
-        this.$notify({
-          group: "pomodro",
-          type: "info",
-          title: "stage 4",
-          text: "stage 4 started started!",
-        });
-        // console.log('stage 4')
-        this.$refs.work.click();
-        this.stageFour = false;
-      });
-
-      // long break
-      this.longBreak = true;
-      this.thirtyBreak();
-
-      // closing pomodro mode
-      // this.pomodroMode = false
-    },
-
-    // Resetting mechanism
-    reset() {
-      this.timeStop();
-      this.showTimer = `00:00`;
-      responsiveVoice.cancel();
-    },
-    timeStop() {
-      clearInterval(countdown);
-    },
-    displayTimeLeft(seconds) {
-      this.minutes = Math.floor(seconds / 60);
-      const secondsLeft = seconds % 60;
-      this.showTimer = `${this.minutes < 10 ? 0 : ""}${this.minutes}:${
-        secondsLeft < 10 ? 0 : ""
-      }${secondsLeft}`;
-      //***************** UPDATED *********************
-
-      // voice alarm for each minute
-      if (secondsLeft === 0 && this.minutes !== 0) {
-        responsiveVoice.speak(
-          `${this.minutes} minutes remaining | till ${this.chosenValue} ends`
-        );
-      } else if (secondsLeft === 20 && this.minutes === 0) {
-        responsiveVoice.speak(`20 seconds remaining`);
-      } else if (this.minutes === 0 && secondsLeft === 0) {
-        // responsiveVoice.speak(`Your Break Has Finished. Hurry up before you get fired! Thank you for using our services`)
-      } else if (this.minutes === 0 && secondsLeft < 11) {
-        responsiveVoice.speak(`${secondsLeft}`);
-      }
-    },
-    displayEndTime(timestamp) {
-      const end = new Date(timestamp);
-      const hour = end.getHours();
-      const CorrHours = hour > 12 ? hour - 12 : hour;
-      const minutes = end.getMinutes();
-      this.endTime = `${CorrHours < 10 ? 0 : ""}${CorrHours}:${
-        minutes < 10 ? 0 : ""
-      }${minutes}`;
-    },
-    startTimer(x) {
-      this.reset();
-      this.$refs.startSound.play();
-      const targetSec = parseInt(x.target.dataset.time);
-      this.timer(targetSec);
-    },
-    // timer mechanics
-    timer(seconds) {
-      this.reset();
-      //constants
-      const now = Date.now();
-      const then = now + seconds * 1000;
-      this.displayTimeLeft(seconds);
-      this.displayEndTime(then);
-      //setting animation in one second and storing it in a variable (countdown)
-      //to be able to clearInterval after it reaches zero
-      countdown = setInterval(() => {
-        const remainedSeconds = Math.round((then - Date.now()) / 1000);
-        //Checking when to stop the function
-        if (remainedSeconds < 0) {
-          clearInterval(countdown);
-          return;
-        }
-        // ... what's next
-        if (remainedSeconds == 0 && this.pomodroMode === true) {
-          // console.log('pomodro active')
-
-          if (this.fiveBreak1) this.$emit("shortBreak1");
-          else if (this.stageTwo) this.$emit("stageTwo");
-          else if (this.fiveBreak2) this.$emit("shortBreak2");
-          else if (this.stageThree) this.$emit("stageThree");
-          else if (this.fiveBreak3) this.$emit("shortBreak3");
-          else if (this.stageFour) this.$emit("stageFour");
-          else if (this.longBreak) this.$emit("longBreak");
-        }
-
-        //installing beeb sound
-        if (remainedSeconds < 11) {
-          for (let sec in remainedSeconds) {
-            responsiveVoice.speak(`${sec}`);
-          }
-          this.$refs.beebSound.play();
-        }
-        // changing colors once reaching 10 seconds (needs fixing!)
-        // if (remainedSeconds <= 11) {
-        // not programmed yet
-        // }
-
-        //Displaying timer
-        this.displayTimeLeft(remainedSeconds);
-      }, 1000);
-    },
-    submitMins(e) {
-      e.preventDefault();
-      this.reset();
-      const mins = this.enteredMins;
-      this.timer(mins * 60);
-      this.showTimer = `${mins}`;
-    },
-  },
-  computed: {},
-};
-</script>
-
-<style scoped>
-a:link {
-  color: aquamarine;
+  .slide h3 {
+    color: white;
+  }
 }
 </style>

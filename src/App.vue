@@ -2,6 +2,7 @@
   <div>
     <Navbar />
     <Particles />
+
     <Profile />
     <router-view />
   </div>
@@ -25,9 +26,5 @@ export default {
 <style>
 :root {
   --olive: #808000;
-}
-
-vue-particles {
-  min-height: 10vh;
 }
 </style>
