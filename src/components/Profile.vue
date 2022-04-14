@@ -248,17 +248,17 @@
             <li class="card" id="card_4">
               <div class="card__content">
                 <div>
-                  <h2>Easy Consult</h2>
+                  <h2>Roll-Call</h2>
                   <p>
-                    Coming Soon.
+                    A simple app for displaying a security company's clientele.
                   </p>
-                  <p>Coming Soon.</p>
-                  <p>Coming Soon.</p>
-                  <p>Coming Soon.</p>
+                  <p>Roll-Call ● 2022</p>
+                  <p>VueJs, CSS, Typescript</p>
+                  <p>https://security-roll-call.netlify.app/</p>
                 </div>
                 <figure>
                   <img
-                    src="@/assets/images/construction.png"
+                    src="@/assets/images/roll-call.png"
                     alt="Image description"
                   />
                 </figure>
