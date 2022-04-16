@@ -197,7 +197,11 @@
                   </p>
                   <p>Guard Tracker ● 2022</p>
                   <p>VueJs, Tailwind CSS, Supabase</p>
-                  <p>https://guardtracker.netlify.app</p>
+                  <p>
+                    <a href="https://guardtracker.netlify.app" class="siteLinks"
+                      >https://guardtracker.netlify.app</a
+                    >
+                  </p>
                 </div>
                 <figure>
                   <img
@@ -216,7 +220,11 @@
                   </p>
                   <p>Last Mile ● 2021</p>
                   <p>VueJs/VueXJs, Tailwind CSS, Supabase</p>
-                  <p>https://last-mile.netlify.app</p>
+                  <p>
+                    <a href="https://last-mile.netlify.app" class="siteLinks"
+                      >https://last-mile.netlify.app</a
+                    >
+                  </p>
                 </div>
                 <figure>
                   <img
@@ -229,13 +237,17 @@
             <li class="card" id="card_3">
               <div class="card__content">
                 <div>
-                  <h2>Leave Request</h2>
+                  <h2>Kids Learn</h2>
                   <p>
-                    Coming Soon.
+                    A system for managing ISP clientele.
                   </p>
-                  <p>Coming Soon.</p>
-                  <p>Coming Soon.</p>
-                  <p>Coming Soon.</p>
+                  <p>Kids Learn ● 2022</p>
+                  <p>VueJs, Tailwind CSS</p>
+                  <p>
+                    <a href="https://kids-learn.netlify.app" class="siteLinks"
+                      >https://kids-learn.netlify.app</a
+                    >
+                  </p>
                 </div>
                 <figure>
                   <img
@@ -254,7 +266,13 @@
                   </p>
                   <p>Roll-Call ● 2022</p>
                   <p>VueJs, CSS, Typescript</p>
-                  <p>https://security-roll-call.netlify.app/</p>
+                  <p>
+                    <a
+                      href="https://security-roll-call.netlify.app/"
+                      class="siteLinks"
+                      >https://security-roll-call.netlify.app/</a
+                    >
+                  </p>
                 </div>
                 <figure>
                   <img
