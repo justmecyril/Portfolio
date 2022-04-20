@@ -239,19 +239,19 @@
                 <div>
                   <h2>Kids Learn</h2>
                   <p>
-                    A system for managing ISP clientele.
+                    An online educative kids video platform.
                   </p>
                   <p>Kids Learn ● 2022</p>
                   <p>VueJs, Tailwind CSS</p>
                   <p>
-                    <a href="https://kids-learn.netlify.app" class="siteLinks"
-                      >https://kids-learn.netlify.app</a
+                    <a href="https://kids-learn.netlify.app/" class="siteLinks"
+                      >https://kids-learn.netlify.app/</a
                     >
                   </p>
                 </div>
                 <figure>
                   <img
-                    src="@/assets/images/under construction.jpeg"
+                    src="@/assets/images/kids-learn.png"
                     alt="Image description"
                   />
                 </figure>
